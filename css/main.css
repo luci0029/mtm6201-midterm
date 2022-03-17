@@ -349,11 +349,18 @@ h2{
 	transition: all 0.7s ease;
 }
 
+.row, .welcometext{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
 .wrapper {
-    justify-content: center;
+        justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 15px;
+    margin: 16px;
 }
  /*******FOOTER**************/
 footer {
@@ -421,7 +428,7 @@ footer {
       margin-top: -5%;
   }
 
-  .row, .welcometext{
+  .row1, .welcometext{
       margin-top: 10px;
   }
 
@@ -457,7 +464,7 @@ footer {
 
 h4{
       color: rgba(231, 178, 33, 0.856);
-      font-size: 19px;
+      font-size: 27px;
       font-weight: bold;
 }
 
@@ -470,24 +477,23 @@ h4{
 
 .column4{
     display: flex;
-    height: 245px;
+    height: 255px;
     padding: 19px;
     flex-direction: column;
 }
-.column2 {
-    display: flex;
-    height: 124px;
-    width: 36px;
-    padding-left: 180px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    justify-content: center;
-  }
+
   .row2:after {
     content: "";
     display: table;
     clear: both;
   }
+
+
+  @media only screen and (min-width: 600px) {
+  
+    
+
+}
 
 
 
@@ -568,32 +574,35 @@ h4{
     /*********WELCOME TXT*****************/
      .welcome{
         text-align: center;
-        margin-left: 45px;
-        margin-right: 45px;
+        margin-left: 55px;
+        margin-right: 55px;
      }
 
     /*************PRODUCT BANNER********************/
+    .productproduct{
+        height: 370px;
+        width: 25%;
+        margin: 10px;
+
+    }
+
+    .wrapper{
+        margin-top: 25px;
+        margin-bottom: 25px;  
+    }
+
     .product {
         background-size: cover;
-        height: 400px;
+        height: 190px;
+        margin-right: 101px;
+        margin-left: 80px;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .productproduct{
-        height: 390px;
-        margin: 10px;
-        margin-left: 70px;
-        margin-right: -40px;
-    }
-
-    .wrapper{
-        margin: 35px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
+    
 
     /*********CONTACT FORM*****************/
 
@@ -623,20 +632,19 @@ h4{
   .form {
     margin: 20%;
     margin-top: -5%;
-    align-items: center;
-    justify-content: center;
-    display: block;
-    
+    margin-left: 35%;
   }
 
   .row, .welcometext{
     margin-top: 15px;
     margin-left: auto;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .ordernow{
     margin-top: revert;
-    margin-left: 150px;
   }
 
   /*********************VISIT PAGE*************************/
@@ -647,69 +655,13 @@ h4{
     font-weight: bold;
 }
 
-.row11{
-    display: flex;
-
-}
-
-.column3{
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  flex-wrap: wrap;
-}
-
-.column4{
-  display: flex;
-  height: 245px;
-  padding: 19px;
-  flex-direction: column;
-}
-.column2 {
-    display: flex;
-    height: 340px;
-    width: 440px;
-    padding-left: 50px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.row2:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 
 
 
 }
 
-@media only screen and (min-width: 600px) {
-    .product {
-        background-size: cover;
-        height: 190px;
-        margin-right: 40px;
-        margin-left: 40px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .productproduct{
-        height: 330px;
-        margin: 10px;
-
-    }
-
-    .wrapper{
-        margin: 25px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-}
 
 
 
