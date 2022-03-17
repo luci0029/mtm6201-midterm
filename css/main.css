@@ -88,6 +88,8 @@ h2{
     background-size: cover;
 }
 
+
+
 /*************LOGO**************/
     .logo{
         display: block;
@@ -98,6 +100,17 @@ h2{
         right: -9999px;
         margin: 0 auto;
     }
+
+    .logo {
+        animation-duration: 2.5s;
+        animation-name: slidein;
+        animation-iteration-count:unset;
+    }
+    
+    @keyframes slidein {
+            0%   {left:0px; top:0px;}
+            25%  {left:200px; top:0px;}
+      }
  
 /*************HAMBURGER MENU**************/
    .wrap-menu{
