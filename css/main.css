@@ -139,7 +139,7 @@ h2{
  display: flex;
  align-items: center;
  justify-content: center;
- transition: all 0.s ease;
+ transition: all  ease;
 }
 
 .wrap-menu .hamburger > div:before,
@@ -165,7 +165,7 @@ h2{
 
 .wrap-menu .toggler:checked + .hamburger > div:before,
 .wrap-menu .toggler:checked + .hamburger > div:after{
- top: o;
+ 
  transform: rotate(185deg);
 }
 
@@ -348,7 +348,8 @@ h2{
 
 .productproduct:hover .over{
 	opacity: 0.6;
-	width: 100%;
+	width: 95%;
+    height: 55%;
 	transition: all 0.7s ease;
 }
 
@@ -361,10 +362,11 @@ h2{
   }
 
 .wrapper {
-        justify-content: center;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 16px;
+    margin-left: 0px;
+    margin-right: 24px;
 }
  /*******FOOTER**************/
 footer {
@@ -610,6 +612,13 @@ h5{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .productproduct:hover .over{
+        opacity: 0.6;
+        width: 98%;
+        height: 85%;
+        transition: all 0.7s ease;
     }
 
     
