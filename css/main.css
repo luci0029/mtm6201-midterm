@@ -292,10 +292,12 @@ h2{
 
 /* Create two equal columns */
 .column {
-    float: left;
+        float: left;
     width: 47%;
     padding-left: 7px;
-  height: 100px; 
+    padding-top: 39px;
+    padding-bottom: 60px;
+    height: 100px; 
 }
 
 
