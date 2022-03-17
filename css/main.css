@@ -359,6 +359,7 @@ h2{
 }
 
 
+
 .productproduct:hover .over{
 	opacity: 0.6;
 	width: 95%;
@@ -514,7 +515,7 @@ h5{
   }
 
 
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 800px) {
   
     
 
@@ -662,15 +663,16 @@ h5{
   }
   
   .form {
-    margin: 18%;
-    MARGIN-BOTTOM: -34px;
-    margin-top: -2%;
-    margin-left: 35%;
+        /* margin: 18%; */
+        MARGIN-BOTTOM: -34px;
+        /* margin-top: -2%; */
+        margin-left: 31%;
+        margin-right: 31%;
   }
 
   .row, .welcometext{
-    margin-top: 50px;
-    margin-bottom: 65px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: auto;
     justify-items: center;
     display: flex;
