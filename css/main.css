@@ -73,42 +73,62 @@ h2{
 /*************MOBILE**************/
 
   /*************HEADER IMAGE**************/
-.header {
-    background-image: url(../images/headermobile.jpg);
-    background-color: #ffe6ac;
-    position: absolute;
+.backgroundimg{
+    background-image: url("../images/headermobile.jpg");
     width: 100%;
-    height: 105%;
+    height: 400px;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner {
-    color: white;
-}
-.greybanner {
-    background-color: rgba(34, 34, 34, .6);
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-
+.logo{
+    display: block;
+    position: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
 }
 
-/*************LOGO**************/
-    .logo{
-        display: block;
-        position: absolute;
-        align-items: center;
-        width: 200px;
-        left: -9999px;
-        right: -9999px;
-        margin: 0 auto;
-    }
- 
-/*************HAMBURGER MENU**************/
-   .wrap-menu{
+/********header buttons**************/
+
+.button{
+    text-align: center;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn2{
+    display: none;
+}
+
+
+.btn{
+    width: 140px;
+    outline: none;
+    display:inline-block;
+    cursor: pointer;
+    background-color: rgba(231, 178, 33, 0.856);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 0.80rem 1.5rem;
+    text-decoration: none;
+}
+
+.btn:hover{
+    opacity: 0.9;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 187, 0); ;
+    transition: all 0.5s ease-in;
+}
+
+/*****haamburger nav******/
+.wrap-menu{
     position:fixed;
     top:0;
     left: 0;
@@ -121,7 +141,7 @@ h2{
     left:0;
     z-index:2;
     opacity: 0;
-    width: 40px;
+    width: 50px;
     height: 50px;
     cursor: pointer;
 }
@@ -131,18 +151,20 @@ h2{
     top:0;
     left:0;
     z-index: 1;
-    width: 40px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     padding: 1rem;
     display: flex;
     align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
     justify-content: center;
 }
 /***hamburger design***/
 .wrap-menu .hamburger > div{
  position: relative;
  width: 100%;
- height: 2.5px;
+ height: 2px;
  background-color: rgb(255, 255, 255);
  display: flex;
  align-items: center;
@@ -157,7 +179,7 @@ h2{
  z-index: 1;
  top: -10px;
  width: 100%;
- height: 2.5px;
+ height: 2px;
  color:  rgba(255, 255, 255, 0.856);;
  background: inherit;
 }
@@ -236,63 +258,92 @@ h2{
  transition: all 0.35s ease;
 }
 
-/************navbar hidden***************/
-.nav-left, .nav-right{
-    display: none;
-}
-
-/******************HEADER TXT******************/
-.caption{
-    text-align: center;
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-h3{
-    font-size: 20px;
-    color: #ffffff;
-}
-
-/******************HEADER BUTTON******************/
-.btn{
-    width: 120px;
-    outline: none;
-    display:inline-block;
-    cursor: pointer;
-    background-color: rgba(231, 178, 33, 0.856);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 0.60rem 1rem;
-    text-decoration: none;
-}
-
-.btn2{
-    display: none;
-}
-
-.btn:hover{
-    opacity: 0.9;
-    color: rgb(0, 0, 0);
-    background-color:rgb(255, 187, 0); ;
-    transition: all 0.5s ease-in;
-}
-
 /**welcome n covid-19 content***/
- .welcomeimg{
-     display: none;
- }
+.welcomeimg{
+    display: none;
+}
+ 
+.text-container{
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
-
- /*********GALLERY*************/
+/*********GALLERY*************/
  
 /**********PRODUCT BANNER*************/
 .product {
     background-image: url(../images/yeh-xintong-go3DT3PpIw4-unsplash.jpg);
+    background-color: #ffe6ac;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    margin: 25px;
+}
+.banner {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    color: rgb(0, 0, 0);
+}
+
+/********PRODUCT and CATERING GALLERY********/
+.wrapper {
+    display: flex;
+    margin: 25px;
+  }
+ 
+  .photo{
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 150px;
+  }
+ 
+  .img{
+      align-items: center;
+      justify-content: center;
+      max-width: 100%;
+      height: 150px;
+  }
+ 
+ 
+  .over {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 90%;
+    background: #FFF;
+    transition: all 0.7s ease;
+  }
+ 
+  .wrapper p{
+    text-align: center;
+    font-size: 13px;
+    font-style: bold;
+    letter-spacing:1px;
+  }
+ 
+  .photo:hover .over {
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s ease;
+  }
+
+  /**********CATERING BANNER*************/
+.catering {
+    background-image: url(../images/yeh-xintong-go3DT3PpIw4-unsplash.jpg);
+    background-color: #ffe6ac;
+    height: 100px;
     position: relative;
-    margin-top: 1000px;
+    background-position: center;
+    background-size: cover;
     margin: 25px;
 }
  
@@ -301,7 +352,135 @@ h3{
     padding-bottom: 65px;
     color: rgb(0, 0, 0);
 }
+
+/*************FOOOTER************/
+footer {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ecc771;
+    color: rgb(0, 0, 0);
+    line-height: 28px;
+    text-align: center;
+    margin-top: px;
+}
  
+.copyright{
+    background-color:  #e7b747;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+}
+ 
+       /**button request an order**/
+ 
+       .button4{
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+        font-weight: bold;
+    }
+   
+    .button44{
+        background-color: rgba(240, 248, 255, 0);
+        color: rgb(0, 0, 0);
+        border: 1px solid  #000000;
+        padding: 5px 5px;
+        text-decoration: none;
+    }
+
+    .button44:hover{
+        opacity: 0.9;
+        color: rgb(0, 0, 0);
+        background-color:rgb(255, 187, 0); ;
+        transition: all 0.5s ease-in;
+    }
+
+    /******NAV HIDDEN**********/
+    .nav-left, .nav-right{
+        display: none;
+    }
+
+    /*******************DESKTOP VERSION**************************/
+    @media only screen and (min-width: 780px){
+
+        /******HEADER IMG*******/
+        .backgroundimg{
+            background-image:url("../images/header3.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+
+         /*********HEADER BUTTONS**********/
+            .btn2{
+               display: contents;
+            }
+
+            .btn2{
+                width: 140px;
+                outline: none;
+                display:inline-block;
+                cursor: pointer;
+                background-color: rgba(231, 178, 33, 0.856);
+                color: rgb(255, 255, 255);
+                border: none;
+                padding: 0.80rem 1.5rem;
+                text-decoration: none;
+            }
+            
+            .btn2:hover{
+                opacity: 0.9;
+                color: rgb(0, 0, 0);
+                background-color:rgb(255, 187, 0); ;
+                transition: all 0.5s ease-in;
+            }
+           
+         /*********WELCOME CONTENT************/   
+
+
+         /************GALLERY CONTENT*************************/
+         .product{
+            display: none;
+        }
+        
+        .catering{
+            display: none;
+        }
+
+        .photo{
+            width: 90%;
+            height: 00%;
+        }
+    
+
+            
+        
+        
+
+
+
+
+    }
+ 
+
+
+
+
+
+
+
+  
+
+
+    
+
+ 
+  
+
+
+
+
+
+
 
 
 
