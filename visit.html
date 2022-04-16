@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>3 Sisters</title>
+     <link href="css/main.css" rel="stylesheet">
+ </head>
+
+<body>
+  <!--------LOGO-------->
+ <div style="height: 85px;">
+   	<img src="images/SVG/3-sisters-logo.svg" class="logo" alt="3 sisters logo"/>
+  <div class="headerbtn">
+
+         <!----------------- HAMBIRGER NAV ------------------>
+            <section class="mobile-nav">
+	             <div class="wrap-menu">
+		               <input type="checkbox" class="toggler">
+	                   	<div class="hamburger">
+	                 	<div></div></div>
+                		<div class="menu">
+	               		<div>
+		             		<div>
+			             		<ul>
+					            	<li><a href="index.html">HOME</a></li>
+					            	<li><a href="contact.html">CONTACT US</a></li>
+					             	<li><a href="visit.html ">VISIT US</a></li>
+				            	</ul>
+			          	</div>
+		            	</div>
+	              	</div>    
+             	    </div>
+             </section>			
+  </div>
+ </div>
+
+
+	<div class="row">
+
+        <!----LOCATION, HOURS, CONTACT INFO------->
+		<div class="column" style="height:unset">
+
+			<div class="row2">
+                <h5>VISIT US</h5>
+				<h4>Location</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+			</div>
+
+			<div class="row2">
+				<h4>Hours</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+			</div>
+
+			<div class="row2">
+				<h4>Contact Info</h4>
+				<p>Lorem ipsum dolor sit amet consectetur
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur
+                </p>
+			</div>
+
+		</div>
+
+        <!---------GOOGLE MAPS-------------->
+		<div class="column" style="height:unset">
+			<div id="map"></div>
+    			<script>
+      function initMap() {
+        var uluru = {lat: 45.3895109, lng: -75.6327113};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+			</script>
+			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyCqCbNrObskpmDG_2tYcNf9ZIaWX2JXdug"></script>
+		</div>
+	</div>
+
+<!---FOOTER----->
+<footer>
+  <div class="button4">
+      <a href="" class="button44">REQUEST AN ORDER</a>
+  </div>
+  <p class="txtfooter">
+      2211 Arch Street, Ottawa
+      <br>
+      rosemary.3sisters@outlook.com
+      <br>
+      613-695-9122
+  </p>
+  <p class="copyright">2022 3 Sisters Bakeshop / All Rights Reserved</p>
+</footer>
+
+
+</body>
+</html>
